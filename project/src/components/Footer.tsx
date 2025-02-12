@@ -16,15 +16,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-purple-200">
                 <Mail className="w-5 h-5 text-purple-400" />
-                <span>contact@techfest2024.com</span>
+                <span>kirukulal@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3 text-purple-200">
                 <Phone className="w-5 h-5 text-purple-400" />
-                <span>+1 (555) 123-4567</span>
+                <span>9844240521</span>
               </div>
               <div className="flex items-center space-x-3 text-purple-200">
                 <MapPin className="w-5 h-5 text-purple-400" />
-                <span>123 College Street, City, State</span>
+                <span>Nagara, Puttur</span>
               </div>
             </div>
           </motion.div>
@@ -75,8 +75,9 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-purple-500/20 text-center text-purple-200">
-          <p>&copy; 2024 TechFest. All rights reserved.</p>
-        </div>
+  <p>&copy; 2025 TechFest. All rights reserved. | Crafted with 💜 by Kiran and Void</p>
+</div>
+
       </div>
     </footer>
   );

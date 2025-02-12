@@ -42,55 +42,55 @@ const teamMembers = [
     name: 'Preethesh P Nayak',
     role: 'Student Coordinator',
     image: '/images/preethesh3.jpg',
-    contact: 'james.w@techfest.com'
+    contact: ''
   },
   {
     name: 'Dilan',
     role: 'Student Coordinator',
     image: '/images/dilan2.jpg',
-    contact: 'maria.g@techfest.com'
+    contact: ''
   },
   {
     name: 'Yashwith',
     role: 'Student Coordinator',
     image: '/images/yashwith1.jpg',
-    contact: 'robert.t@techfest.com'
+    contact: ''
   },
   {
     name: 'Heera B N',
     role: 'Student Coordinator',
     image: '/images/heera.jpg',
-    contact: 'sophie.b@techfest.com'
+    contact: ''
   },
   {
     name: 'K M Srujana',
     role: 'Student Coordinator',
     image: '/images/srujana.jpg',
-    contact: 'daniel.l@techfest.com'
+    contact: ''
   },
   {
     name: 'Varshini D',
     role: 'Student Coordinator',
-    image: '/images/varshini1.jpg',
-    contact: 'rachel.m@techfest.com'
+    image: '/images/varshini.jpg',
+    contact: ''
   },
   {
     name: 'Thrisha',
     role: 'Student Coordinator',
     image: '/images/thrisha1.jpg',
-    contact: 'thomas.a@techfest.com'
+    contact: ''
   },
   {
     name: 'sushmitha',
     role: 'Student Coordinator',
-    image: '/images/sushmitha1.jpg',
-    contact: 'sarah.j@techfest.com'
+    image: '/images/sushmitha.jpg',
+    contact: ''
   },
   {
     name: 'K M soujanya',
     role: 'Event Manager',
     image: '/images/soujanya.jpg',
-    contact: 'david.c@techfest.com'
+    contact: ''
   }
 ];
 

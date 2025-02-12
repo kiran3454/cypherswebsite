@@ -40,13 +40,13 @@ const Footer = () => {
                 <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">About Us</a>
               </li>
               <li>
-                <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">Events</a>
+                <a href="#events" className="text-purple-200 hover:text-purple-400 transition-colors">Events</a>
               </li>
               <li>
-                <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">Registration</a>
+                <a href="#registration" className="text-purple-200 hover:text-purple-400 transition-colors">Registration</a>
               </li>
               <li>
-                <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">Team</a>
+                <a href="#team" className="text-purple-200 hover:text-purple-400 transition-colors">Team</a>
               </li>
             </ul>
           </motion.div>
@@ -58,17 +58,8 @@ const Footer = () => {
           >
             <h3 className="text-xl font-bold mb-4 gradient-text">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">
-                Facebook
-              </a>
-              <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">
-                Twitter
-              </a>
-              <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">
+              <a href="https://www.instagram.com/yem_see_yeh_pappuz?utm_source=qr&igsh=MWN2NDhteGE5azZ0cQ==" className="text-purple-200 hover:text-purple-400 transition-colors">
                 Instagram
-              </a>
-              <a href="#" className="text-purple-200 hover:text-purple-400 transition-colors">
-                LinkedIn
               </a>
             </div>
           </motion.div>

@@ -1,66 +1,76 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
-import { Music2, Gamepad2, Users, Mic2, Camera, Brain, Info, X } from 'lucide-react';
+import { Music2, Gamepad2, Users, Sparkles, Camera, Brain, Info, X } from 'lucide-react';
 
 const events = [
   {
-    title: 'Dumcharades',
+    title: 'CODING',
     icon: <Users className="w-8 h-8" />,
-    description: 'Show your acting skills in this fun-filled charades competition',
+    description: 'Think, type, debug—let the coding battle begin',
     date: 'March 22, 2025',
     time: '2:30 PM',
-    venue: 'Main Auditorium',
+    venue: 'Lab 2',
     rules: [
-      'Teams of 4 members',
-      'Each round is 2 minutes long',
-      'No verbal communication allowed',
-      'Props are not allowed',
-      'Points deducted for rule violations'
+      'Teams of 2 members',
+      'Event consist of 4 rounds',
+      'Rounds will be explained on the day of event',
+      'Allowed languages C and Java'
     ]
   },
   {
-    title: 'Dance Competition',
+    title: 'WEBSITE DESIGN',
+    icon: <Users className="w-8 h-8" />,
+    description: 'Sketch, code, launch—who will craft the best site?',
+    date: 'March 22, 2025',
+    time: '2:30 PM',
+    venue: 'Lab 2',
+    rules: [
+      'Teams of 2 members',
+      'Event consist of 2 rounds',
+      'Rounds will be explained on the day of event',
+      'Using HTML,CSS,JAVASCRIPT'
+    ]
+  },
+  {
+    title: 'Dance',
     icon: <Music2 className="w-8 h-8" />,
     description: 'Showcase your dance moves across various styles',
     date: 'March 22, 2025',
     time: '2:30 PM',
     venue: 'Open Air Theatre',
     rules: [
-      'Solo or group performances allowed',
-      'Time limit: 5 minutes',
-      'Original choreography required',
-      'Props must be approved beforehand',
-      'Music should be submitted 2 days prior'
+      'Maximum 4 ,Minimum 2 participant from a team',
+      'Time limit: 4+1 minutes',
+      'IT related props are allowed',
+      'No Restriction for songs'
     ]
   },
   {
-    title: 'Gaming Tournament',
+    title: 'Gaming',
     icon: <Gamepad2 className="w-8 h-8" />,
     description: 'Compete in a gaming event which will be BGMI',
     date: 'March 22, 2025',
     time: '2.30 PM',
     venue: 'LAB 1',
     rules: [
-      'Bring your own peripherals',
-      'Standard tournament rules apply',
-      'Best of 3 matches',
-      'No cheating or exploits allowed',
-      'Be present 15 minutes before match'
+      'Number of participants is 2',
+      'Bring your own peripherals,needed accesories',
+      'There will be 3 rounds',
+      'No cheating or exploits allowed ,if found the team will disqualified ',
+      'No Internet will be provided'
     ]
   },
   {
-    title: 'Singing Competition',
-    icon: <Mic2 className="w-8 h-8" />,
-    description: 'Let your voice shine in our singing competition',
+    title: 'Surprize event',
+    icon: <Sparkles className="w-8 h-8" />,
+    description: 'A little mystery, a lot of magic—get ready for the unexpected!',
     date: 'March 22, 2025',
     time: '2:30 PM',
     venue: 'APJ Hall',
     rules: [
-      'One song per participant',
-      'Time limit: 4 minutes',
-      'Original or cover songs allowed',
-      'Backing track must be instrumental only',
-      'No lip syncing allowed'
+      'Number of participant is 2',
+      'Shhh, it s a secret! Everything is set for the big surprise!'
+    
     ]
   },
   {
@@ -68,18 +78,17 @@ const events = [
     icon: <Camera className="w-8 h-8" />,
     description: 'Capture the essence of our fest in your lens',
     date: 'March 22, 2025',
-    time: 'All Day',
+    time: '2.30 PM',
     venue: 'Campus Wide',
     rules: [
       'Original photographs only',
       'Basic editing allowed',
       'Submit in RAW + JPEG format',
-      'Maximum 3 entries per person',
       'Theme will be announced on spot'
     ]
   },
   {
-    title: 'Quiz Competition',
+    title: 'Quiz ',
     icon: <Brain className="w-8 h-8" />,
     description: 'Test your knowledge across various domains',
     date: 'March 22, 2025',
@@ -87,10 +96,10 @@ const events = [
     venue: 'APJ Hall',
     rules: [
       'Teams of 2 members',
+      'Event consists of 3 rounds',
       'Multiple rounds of increasing difficulty',
       'No electronic devices allowed',
-      'Judges decision is final',
-      'Registration closes 30 mins before start'
+      'Judges decision is final'
     ]
   }
 ];

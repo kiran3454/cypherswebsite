@@ -8,6 +8,7 @@ import TeamSection from './components/TeamSection';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 
+
 function App() {
   const [loading, setLoading] = useState(true);
 

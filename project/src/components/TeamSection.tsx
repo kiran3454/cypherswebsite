@@ -3,10 +3,17 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const teamMembers = [
   {
+    name: 'Dr.Rajeshwari',
+    role: 'Faculty Coordinator',
+    image: '/images/mam.jpg',
+    contact: 'rajeshwari@vcet.edu.in',
+    isLead: true
+  },
+  {
     name: 'Yukta I P',
     role: 'Student Coordinator',
     image: '/images/yuktha.jpg',
-    contact: 'alex.j@techfest.com'
+    contact: ''
   },
   {
     name: 'Kiran Kulal',
@@ -18,25 +25,25 @@ const teamMembers = [
     name: 'Vikhya Gowda',
     role: 'Student Coordinator',
     image: '/images/vikhya.jpg',
-    contact: 'michael.c@techfest.com'
+    contact: ''
   },
   {
     name: 'Chandan',
     role: 'Student Coordinator',
     image: '/images/chandan1.jpg',
-    contact: 'emily.d@techfest.com'
+    contact: ''
   },
   {
     name: 'Ramya',
     role: 'Student Coordinator',
     image: '/images/Ramya2.jpg',
-    contact: 'david.k@techfest.com'
+    contact: ''
   },
   {
     name: 'K Shree Ranjan',
     role: 'Student Coordinator',
     image: '/images/ranjan1.jpg',
-    contact: 'lisa.w@techfest.com'
+    contact: ''
   },
   {
     name: 'Preethesh P Nayak',
@@ -94,8 +101,22 @@ const teamMembers = [
   }
 ];
 
-const TeamMemberCard = ({ member, index }) => {
-  const cardRef = React.useRef(null);
+interface TeamMember {
+  name: string;
+  role: string;
+  image: string;
+  contact: string;
+  isLead?: boolean;
+}
+
+interface TeamMemberCardProps {
+  member: TeamMember;
+  index: number;
+  isLead?: boolean;
+}
+
+const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ member, index, isLead }) => {
+  const cardRef = React.useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: cardRef,
     offset: ["start end", "end start"]
@@ -107,25 +128,27 @@ const TeamMemberCard = ({ member, index }) => {
 
   const [imageError, setImageError] = React.useState(false);
 
-  const handleImageError = (e) => {
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
     console.log(`Image failed to load for ${member.name}:`, member.image);
     setImageError(true);
-    // Use a professional placeholder image from Unsplash
     e.currentTarget.src = `https://source.unsplash.com/random/400x400/?portrait&sig=${member.name}`;
   };
+
+  const cardSize = isLead ? "w-64 h-64" : "w-48 h-48";
+  const nameSize = isLead ? "text-2xl" : "text-xl";
 
   return (
     <motion.div
       ref={cardRef}
       style={{ y, scale, opacity }}
-      className="flex flex-col items-center p-4"
+      className={`flex flex-col items-center p-4 ${isLead ? 'col-span-full mb-12' : ''}`}
     >
       <motion.div
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className="relative group"
       >
-        <div className="w-48 h-48 rounded-full overflow-hidden mb-4 shadow-lg transform transition-all duration-300 group-hover:shadow-purple-500/50">
+        <div className={`${cardSize} rounded-full overflow-hidden mb-4 shadow-lg transform transition-all duration-300 group-hover:shadow-purple-500/50`}>
           <img
             src={member.image}
             alt={member.name}
@@ -143,26 +166,38 @@ const TeamMemberCard = ({ member, index }) => {
           </div>
         </motion.div>
       </motion.div>
-      <h3 className="text-xl font-semibold mt-2 text-white">{member.name}</h3>
-      <p className="text-purple-200">{member.role}</p>
+      <h3 className={`${nameSize} font-semibold mt-2 text-white`}>{member.name}</h3>
+      <p className="text-purple-200 text-lg">{member.role}</p>
+      {isLead && (
+        <p className="text-purple-300 mt-2 max-w-2xl text-center">
+          Leading the TechFest 2025 with vision and innovation
+        </p>
+      )}
     </motion.div>
   );
 };
 
-const TeamSection = () => {
+const TeamSection: React.FC = () => {
+  const leadMember = teamMembers.find(member => member.isLead);
+  const otherMembers = teamMembers.filter(member => !member.isLead);
+
   return (
     <section className="py-20 bg-gradient-to-b from-[#1e1b4b] to-[#2c1654] overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-12 gradient-text"
+          className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-blue-300"
         >
           Our Team
         </motion.h2>
 
+        {leadMember && (
+          <TeamMemberCard member={leadMember} index={-1} isLead={true} />
+        )}
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-          {teamMembers.map((member, index) => (
+          {otherMembers.map((member, index) => (
             <TeamMemberCard key={index} member={member} index={index} />
           ))}
         </div>

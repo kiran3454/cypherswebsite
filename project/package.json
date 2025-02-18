@@ -1,5 +1,6 @@
 {
   "name": "vite-react-typescript-starter",
+  "homepage": "https://kiran3454.github.io/cypherswebsite",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,12 +9,15 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "esbuild": "^0.25.0",
     "framer-motion": "^10.18.0",
+    "gh-pages": "^6.3.0",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",

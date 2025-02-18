@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 interface ParallaxSectionProps {
@@ -12,7 +12,7 @@ const ParallaxSection: React.FC<ParallaxSectionProps> = ({
   imageUrl,
   title,
   subtitle,
-  reverse = false,
+  // reverse = false,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({

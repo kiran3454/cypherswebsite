@@ -9,7 +9,6 @@ interface FormData {
   participants: string[];
   selectedEvent: string;
 }
-
 const teams = [
   'Dominators',
   'TechWise',

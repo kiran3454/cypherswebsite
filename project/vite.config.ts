@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base:"/cypherswebsite"
+  //base:"/cypherswebsite"
 });

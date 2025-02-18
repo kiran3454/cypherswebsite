@@ -5,7 +5,7 @@ const teamMembers = [
   {
     name: 'Dr.Rajeshwari',
     role: 'Faculty Coordinator',
-    image: '/public/images/mam.jpg',
+    image: '/images/mam.jpg',
     contact: 'rajeshwari@vcet.edu.in',
     isLead: true
   },

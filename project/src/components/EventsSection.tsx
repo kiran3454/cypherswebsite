@@ -104,7 +104,7 @@ const events = [
   }
 ];
 
-const ParallaxWrapper = ({ children, offset = 50 }) => {
+const ParallaxWrapper = ({ offset = 50 }) => {
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,

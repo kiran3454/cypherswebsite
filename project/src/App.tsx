@@ -35,7 +35,7 @@ function App() {
           <section id="home">
             <ParallaxSection
               imageUrl='./images/group2.jpg'
-              title="TechFest 2K25"
+              title="Lakshya 2K25"
               subtitle="Cypher Sprinters"
             />
           </section>

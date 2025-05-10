@@ -95,7 +95,7 @@ const teamMembers = [
   },
   {
     name: 'K M soujanya',
-    role: 'Student Coordinator',
+    role: 'Event Manager',
     image: '/images/soujanya.jpg',
     contact: ''
   }

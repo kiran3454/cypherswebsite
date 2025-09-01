@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Preloader from './components/Preloader';
 import ParallaxSection from './components/ParallaxSection';
@@ -35,7 +35,7 @@ function App() {
           <section id="home">
             <ParallaxSection
               imageUrl='./images/group2.jpg'
-              title="TechFest 2K25"
+              title="Lakshya 2K25"
               subtitle="Cypher Sprinters"
             />
           </section>

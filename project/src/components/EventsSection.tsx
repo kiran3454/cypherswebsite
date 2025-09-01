@@ -7,7 +7,7 @@ const events = [
     title: 'CODING',
     icon: <Users className="w-8 h-8" />,
     description: 'Think, type, debug—let the coding battle begin',
-    date: 'March 22, 2025',
+    date: 'March 21, 2025',
     time: '2:30 PM',
     venue: 'Lab 2',
     rules: [
@@ -21,7 +21,7 @@ const events = [
     title: 'WEBSITE DESIGN',
     icon: <Users className="w-8 h-8" />,
     description: 'Sketch, code, launch—who will craft the best site?',
-    date: 'March 22, 2025',
+    date: 'March 21, 2025',
     time: '2:30 PM',
     venue: 'Lab 2',
     rules: [
@@ -35,7 +35,7 @@ const events = [
     title: 'Dance',
     icon: <Music2 className="w-8 h-8" />,
     description: 'Showcase your dance moves across various styles',
-    date: 'March 22, 2025',
+    date: 'March 21, 2025',
     time: '2:30 PM',
     venue: 'Open Air Theatre',
     rules: [
@@ -49,7 +49,7 @@ const events = [
     title: 'Gaming',
     icon: <Gamepad2 className="w-8 h-8" />,
     description: 'Compete in a gaming event which will be BGMI',
-    date: 'March 22, 2025',
+    date: 'March 21, 2025',
     time: '2.30 PM',
     venue: 'LAB 1',
     rules: [
@@ -64,7 +64,7 @@ const events = [
     title: 'Surprize event',
     icon: <Sparkles className="w-8 h-8" />,
     description: 'A little mystery, a lot of magic—get ready for the unexpected!',
-    date: 'March 22, 2025',
+    date: 'March 21, 2025',
     time: '2:30 PM',
     venue: 'APJ Hall',
     rules: [
@@ -77,7 +77,7 @@ const events = [
     title: 'Photography Contest',
     icon: <Camera className="w-8 h-8" />,
     description: 'Capture the essence of our fest in your lens',
-    date: 'March 22, 2025',
+    date: 'March 21, 2025',
     time: '2.30 PM',
     venue: 'Campus Wide',
     rules: [
@@ -91,7 +91,7 @@ const events = [
     title: 'Quiz ',
     icon: <Brain className="w-8 h-8" />,
     description: 'Test your knowledge across various domains',
-    date: 'March 22, 2025',
+    date: 'March 21, 2025',
     time: '2.30 PM',
     venue: 'APJ Hall',
     rules: [
